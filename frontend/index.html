@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080d18">
+  <title>SOKO JARVIS</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="brand">
+        <div class="brand-icon">S</div>
+        <div>
+          <h1>SOKO <span>JARVIS</span></h1>
+          <p>PERSONAL AI ASSISTANT</p>
+        </div>
+      </div>
+      <div class="status"><i></i> EN LIGNE</div>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">TON ASSISTANT PERSONNEL</p>
+      <div class="avatar-wrap">
+        <div class="avatar-ring ring-one"></div>
+        <div class="avatar-ring ring-two"></div>
+        <canvas id="avatar-canvas" aria-label="Avatar SOKO JARVIS"></canvas>
+        <img id="avatar-source" src="/avatar.png" alt="" hidden>
+      </div>
+      <h2>Bonjour.</h2>
+      <p class="subtitle">Je suis SOKO JARVIS.<br>Prêt à t'accompagner.</p>
+      <div class="ready"><span></span> SYSTÈME INITIALISÉ</div>
+    </section>
+
+    <section class="conversation">
+      <div class="section-label">CONVERSATION</div>
+      <div id="messages" class="messages">
+        <div class="welcome">
+          <strong>Bienvenue dans SOKO JARVIS.</strong>
+          <p>Mon interface est prête. Mon intelligence conversationnelle sera connectée à l'étape suivante.</p>
+        </div>
+      </div>
+    </section>
+
+    <form id="chat-form" class="composer">
+      <button type="button" id="mic" class="mic" aria-label="Microphone">⌁</button>
+      <input id="message" type="text" placeholder="Écris ton message..." autocomplete="off">
+      <button type="submit" class="send" aria-label="Envoyer">➤</button>
+    </form>
+
+    <footer> SOKONSULTING · SOKO JARVIS · V0.1 </footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
